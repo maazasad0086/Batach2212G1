@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<script>
+    function email_chk(){
+var usr_eml=document.getElementById('user_email').value;
+var EmailRule= /^([A-Za-z0-9_\-\.])+@([A-Za-z])+\.([A-Za-z]{2,4})$/;
+if(EmailRule.test(usr_eml)==true){
+alert('Welcome')
+}
+else{
+    document.getElementById('err').innerHTML="Invalid Email";
+}
+    }
+</script>
+
+
+
+</head>
+<body>
+<lable> Email: </lable><input type="email" id="user_email"/><lable id="err" style="color:red"></lable><br/>
+<button onclick="email_chk()">Click Here</button>   
+</body>
+</html>
