@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html><head><title>Java Script</title>
+<script>
+function DOM(){
+var input1=parseInt(document.getElementById('Num1').value);
+var input2=parseInt(document.getElementById('Num2').value);
+var add=input1+input2;
+var subtract=input1-input2;
+var multiply=input1*input2;
+var division=input1/input2;
+document.getElementById('Result1').value=add;
+document.getElementById('Result2').value=subtract;
+document.getElementById('Result3').value=multiply;
+document.getElementById('Result4').value=division;
+
+}
+
+
+
+
+
+
+
+
+
+</script>
+    <body>
+<lable>Enter First Number :</lable>
+<input type="text" id="Num1"/><br/><br/>
+<lable>Enter Second Number :</lable>
+<input type="text" id="Num2"/><br/><br/>
+<lable>Add :</lable>
+<input type="text" id="Result1"><br/><br/>
+<lable>Sub :</lable>
+<input type="text" id="Result2"><br/><br/>
+<lable>Mul :</lable>
+<input type="text" id="Result3"><br/><br/>
+<lable>Div :</lable>
+<input type="text" id="Result4"><br/><br/>
+<button onclick="DOM()">Click Here</button>
+
+
+
+
+
+
+
+
+
+
+</body>
+</head></html>
